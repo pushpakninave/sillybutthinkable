@@ -1,0 +1,1 @@
+**How a sub-content of webpage changes without loading entirely after clicking next or forward even tho it isnt visible initially**
