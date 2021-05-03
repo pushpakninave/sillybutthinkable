@@ -1,2 +1,2 @@
 # sillybutThinkable
- ##QnA for everyone
+  *QnA for everyone
