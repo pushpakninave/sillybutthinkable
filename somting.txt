@@ -1,1 +1,41 @@
-**How a sub-content of webpage changes without loading entirely after clicking next or forward even tho it isnt visible initially**
+Q.1   Given an array, only rotation operation is allowed on array. We can rotate the array as many times as we want.       Return the maximum possible summation of i*arr[i].
+</> - import java.util.Arrays;
+      class test{
+        static int[] rotate(int a[],int Y){
+          int temp = a[0];
+          for(int i=0;i<Y;i++){
+            a[i] = a[i+1];
+          }
+          a[Y] = temp;
+          System.out.println(Arrays.toString(a));
+          return a;
+        }
+
+        static void Sum(int a[],int X){
+          int nSum=0;
+
+          for(int j=0;j<=X;j++){
+            int S=0;
+          for(int i=0;i<=X;i++){
+          S=S+(i*a[i]);
+
+        }
+        if(nSum<S){
+          nSum = S;
+        }
+          System.out.println("each sum: "+S);
+          rotate(a, X);
+
+
+        }
+        System.out.println("Largest sum: "+nSum);
+      }
+
+        public static void main(String[] args) {
+           int arr[] = {1, 20, 2, 10};
+           // output:72
+           int l = arr.length;
+           System.out.println(l);
+          Sum(arr,l-1);
+        }
+      }
