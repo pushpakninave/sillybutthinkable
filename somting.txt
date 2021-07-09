@@ -1,6 +1,7 @@
 Q.1   Given an array, only rotation operation is allowed on array. We can rotate the array as many times as we want.       Return the maximum possible summation of i*arr[i].
 </> - import java.util.Arrays;
       class test{
+        // method to rotate array for "length-1" times
         static int[] rotate(int a[],int Y){
           int temp = a[0];
           for(int i=0;i<Y;i++){
@@ -11,6 +12,7 @@ Q.1   Given an array, only rotation operation is allowed on array. We can rotate
           return a;
         }
 
+      // summing and finding biggest sum array 
         static void Sum(int a[],int X){
           int nSum=0;
 
@@ -25,8 +27,6 @@ Q.1   Given an array, only rotation operation is allowed on array. We can rotate
         }
           System.out.println("each sum: "+S);
           rotate(a, X);
-
-
         }
         System.out.println("Largest sum: "+nSum);
       }
